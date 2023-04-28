@@ -1,0 +1,251 @@
+$orange_color: #b77233
+$blue_color: #3378b8
+
+body
+  margin: 0 auto
+  padding: 0
+  text-align: center
+  background-color: #000
+  color: $orange_color
+  font-family: 'IM Fell English SC', serif
+h2
+  font-size: 3rem
+a
+  color: $blue_color
+  text-decoration: none
+.log-links
+  display: inline-block
+  position: relative
+  color: $blue_color
+  margin-left: 50px
+  font-size: 1.5rem
+.log-links:hover
+  color: #59aaf5
+.log-links::after
+  content: ''
+  position: absolute
+  width: 100%
+  transform: scaleX(0)
+  height: 1px
+  bottom: 4px
+  left: 0
+  background-color: #59aaf5
+  transform-origin: bottom right
+  transition: transform 0.25s ease-out
+.log-links:hover::after
+  transform: scaleX(1)
+  transform-origin: bottom left
+.cart-actions
+  font-size: 1rem
+  margin: 0 5px
+.nav-bar 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 40px
+  width: 100%
+.logo
+  height: 50px
+  width: auto
+.subnav 
+  display: flex
+  justify-content: space-between
+  align-items: start
+  width: 100%
+.navrow 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 350px
+.container 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  width: 80%
+.dashboard-container 
+  display: grid
+  grid-template-columns: 2fr 1fr
+  height: 100%
+.left 
+  padding: 20px
+  height: 100%
+.right 
+  display: grid
+  grid-template-rows: 1fr 1fr
+  height: 100%
+.container-splash
+  height: 100%
+  display: grid
+  grid-template-rows: 70px 1fr 2fr
+.container-dash
+  height: 100vh
+  display: grid
+  grid-template-rows: 70px 1fr
+.dash-font
+  color: #000
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff
+.dash-font:hover
+  color: #dddddd
+  text-shadow: 2px 2px 2px #000, 0 0 2em #000, 0 0 0.4em #000
+.splash
+  display: grid
+  grid-template-rows: 1fr 2fr
+.top-splash
+  display: grid
+  grid-template-columns: 1fr 1fr
+  justify-items: center
+.left-splash
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: start
+  max-width: 65%
+  margin-left: 20%
+.right-splash
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: start
+  text-align: left
+  padding-bottom: 8%
+  max-width: 65%
+  margin-right: 20%
+.bottom
+  text-align: center
+.splash-dragon
+  width: 100%
+  height: auto
+.minwid 
+  min-width: 160px
+.border 
+  border: 2px solid black
+  border-radius: 3px
+.no-marg 
+  margin: 0
+.table 
+  font-size: 1.2rem
+  margin: 0 auto
+  max-width: fit-content
+.info 
+  min-width: 300px
+  text-align: start
+  padding: 5px
+  padding-left: 20px
+.form 
+  margin: 0 auto
+  padding: 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: fit-content
+  border: 1px solid #adb5bd
+  border-radius: 3px
+.form-label
+  margin: 0
+  margin-top: 10px
+.btn 
+  margin: 3 3px
+.btn-primary 
+  margin-top: 5px
+.log-question
+  margin-top: 10px
+.all-authors 
+  min-width: 250px
+.input 
+  margin-bottom: 20px
+  width: 400px
+.submit 
+  margin-bottom: 10px
+.marg-top 
+  margin-top: 10px
+textarea.instructions 
+  min-height: 300px
+.content
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+.product-img
+  max-width: 90%
+.product
+  margin: 40px 40px
+#product-category
+  text-transform: capitalize
+.product-container
+  display: grid
+  grid-template-columns: 1fr 1fr
+  align-items: center
+  justify-content: center
+.max-height
+  max-height: 90vh
+.show-product
+  padding: 0 80px
+.icons
+  font-size: 2rem
+.input-group
+  text-align: center
+.row
+  display: flex
+  justify-content: center
+  flex-direction: row
+  align-items: start
+  flex-wrap: nowrap
+  width: 100%
+.col-lg-4
+  max-width: fit-content
+.quantity
+  max-width: 60px
+.checkout
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding: 20px
+.checkend
+.checkout-form
+  display: grid
+  grid-template-columns: 1fr 1fr
+  align-items: center
+  background-color: rgba(210, 210, 210, 0.1)
+.form-grid
+  padding: 0 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.checkout-btn
+  width: 200px
+  font-size: 1.5rem
+  grid-column: span 2
+  margin-top: 20px
+  justify-self: center
+.ord-sum
+  border: 1px solid #adb5bd
+  border-radius: 3px
+  background-color: rgba(210, 210, 210, 0.1)
+  padding: 10px
+  min-height: 200px
+  font-size: 1.3rem
+.cart-sum
+  justify-self: start
+  align-self: flex-start
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 20px
+.cart-sum .mb-3
+  display: flex
+  justify-content: space-between
+.checkout-container
+  display: flex
+  justify-content: center
+  align-items: start
+.cart-border
+  background-color: rgba(210, 210, 210, 0.1)
+  width: 80%
+.order
+  max-width: 50%
+.details p
+  margin-bottom: 0
+.shop-top
+  width: fit-content
